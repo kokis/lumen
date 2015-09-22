@@ -15,6 +15,6 @@ $app->get('/', function () use ($app) {
     return $app->welcome();
 });
 
-$app->get('hi', function () {
-    return 'Hello!';
+$app->get('user/{id}', function ($id) {
+    return 'User '.$id;
 });
